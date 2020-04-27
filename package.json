@@ -1,0 +1,75 @@
+{
+  "name": "nextjs-boilerplate",
+  "version": "1.0.0",
+  "description": "A NextJs app boilerplate with styled-components",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emresandikci/nextjs-boilerplate.git"
+  },
+  "keywords": [
+    "nextjs",
+    "reactjs",
+    "boilerplate",
+    "styled-components",
+    "styled-system"
+  ],
+  "author": "emresandikci <me@emresandikci.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emresandikci/nextjs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/emresandikci/nextjs-boilerplate#readme",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon -w server/index.js server/index.js",
+    "build": "next build",
+    "start": "yarn build && NODE_ENV=production node server/index.js",
+    "build:svg": "yarn svgr ./src/static/icons -d ./src/icons --svgo-config .svgorc.json",
+    "clean": "rimraf .next node_modules",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
+    "lint": "eslint src",
+    "lint:fix": "yarn lint --fix",
+    "validate": "yarn prettier --check \"src/**/*.{js,jsx,css,json}\" && yarn lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/!(*story).js": [
+      "yarn format",
+      "yarn lint:fix",
+      "yarn validate"
+    ]
+  },
+  "dependencies": {
+    "esducad-ui": "https://github.com/emresandikci/esducad-ui#master",
+    "express": "^4.17.1",
+    "next": "^9.3.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@svgr/cli": "^5.3.1",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.7",
+    "next-routes": "^1.4.2",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2"
+  }
+}
