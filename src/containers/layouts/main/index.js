@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Box, Button, Text } from 'esducad-ui';
-import Link from 'next/link';
+import { Link, Routes } from 'server/routes';
 
 function MainLayout({ children }) {
   return (
@@ -10,12 +10,12 @@ function MainLayout({ children }) {
           <Text fontWeight="800">Logo</Text>
         </Box>
         <Box>
-          <Link href="/">
+          <Link route={Routes.home.name}>
             <a>
               <Button variant="text">Home</Button>
             </a>
           </Link>
-          <Link href="about">
+          <Link route={Routes.about.name}>
             <a>
               <Button variant="text">About</Button>
             </a>
