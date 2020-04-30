@@ -1,3 +1,3 @@
-import About from '../../../containers/public/about';
+import { About } from 'containers';
 
 export default About;
