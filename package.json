@@ -48,6 +48,7 @@
     "esducad-ui": "https://github.com/emresandikci/esducad-ui#master",
     "express": "^4.17.1",
     "next": "^9.3.5",
+    "next-routes": "^1.4.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.0.1"
@@ -65,11 +66,8 @@
     "eslint-plugin-react": "^7.19.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.7",
-    "next-routes": "^1.4.2",
     "nodemon": "^2.0.3",
     "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "rimraf": "^3.0.2"
   }
 }
