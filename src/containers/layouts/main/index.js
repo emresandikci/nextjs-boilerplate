@@ -20,8 +20,6 @@ function MainLayout({ children }) {
               <Button variant="text">About</Button>
             </a>
           </Link>
-          <Button variant="text">Contact</Button>
-          <Button variant="text">Register</Button>
         </Box>
       </Navbar>
       {children}

@@ -1,5 +1,5 @@
-import Document, { Head as DocumentHead, Main, NextScript } from 'next/document';
-import Head from 'next/head';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -15,17 +15,16 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
-          <title>Nextjs BoilerPlate</title>
+          <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
           {this.props.styleTags}
-          <DocumentHead />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
