@@ -11,6 +11,9 @@ const PORT = process.env.PORT || 5000;
 app.prepare().then(() => {
   const server = express();
 
+  //https://expressjs.com/en/advanced/best-practice-security.html
+  server.disable('x-powered-by');
+
   server.use('/', express.static('./src/public'));
 
   server.get('*', (req, res) => {

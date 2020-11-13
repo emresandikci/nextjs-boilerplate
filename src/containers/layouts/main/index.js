@@ -11,14 +11,14 @@ function MainLayout({ children }) {
         </Box>
         <Box>
           <Link route={Routes.home.name}>
-            <a>
-              <Button variant="text">Home</Button>
-            </a>
+            {/* <a> */}
+            <Button variant="text">Home</Button>
+            {/* </a> */}
           </Link>
           <Link route={Routes.about.name}>
-            <a>
-              <Button variant="text">About</Button>
-            </a>
+            {/* <a> */}
+            <Button variant="text">About</Button>
+            {/* </a> */}
           </Link>
         </Box>
       </Navbar>

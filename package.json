@@ -28,6 +28,7 @@
     "clean": "rimraf .next node_modules",
     "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
     "lint": "eslint src",
+    "lint:watch": "esw src -w --color",
     "lint:fix": "yarn lint --fix",
     "validate": "yarn prettier --check \"src/**/*.{js,jsx,css,json}\" && yarn lint"
   },
@@ -47,7 +48,7 @@
   "dependencies": {
     "esducad-ui": "https://github.com/emresandikci/esducad-ui#master",
     "express": "^4.17.1",
-    "next": "^9.3.5",
+    "next": "^10.0.0",
     "next-routes": "^1.4.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -64,6 +65,7 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
+    "eslint-watch": "^7.0.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.7",
     "nodemon": "^2.0.3",
