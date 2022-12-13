@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "esducad-ui": "https://github.com/emresandikci/esducad-ui#master",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "next": "^10.0.0",
     "next-routes": "^1.4.2",
     "react": "^17.0.1",
